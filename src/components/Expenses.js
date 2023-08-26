@@ -1,5 +1,6 @@
 import "./Expenses.css";
 import ExpenseItem from "./ExpenseItem.js";
+import Card from "./Card";
 
 function Expenses({ expenses }) {
   const renderExpenses = expenses.map((expense) => {
@@ -13,7 +14,7 @@ function Expenses({ expenses }) {
     );
   });
 
-  return <div className="expenses">{renderExpenses}</div>;
+  return <Card className="expenses">{renderExpenses}</Card>;
 }
 
 export default Expenses;
